@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Network</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Social Network</h1>
+
+    <div class="form">
+      <h2>Add Individual</h2>
+      <input type="text" id="individualName" placeholder="Enter individual name">
+      <button onclick="addIndividual()">Add Individual</button>
+    </div>
+
+    <div class="form">
+      <h2>Establish Friendship</h2>
+      <input type="text" id="friend1" placeholder="Person 1">
+      <input type="text" id="friend2" placeholder="Person 2">
+      <button onclick="addFriendship()">Add Friendship</button>
+    </div>
+
+    <div class="form">
+      <h2>Calculate Degrees of Separation</h2>
+      <input type="text" id="startPerson" placeholder="Start person">
+      <input type="text" id="targetPerson" placeholder="Target person">
+      <button onclick="calculateDegrees()">Calculate Degrees</button>
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

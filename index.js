@@ -3,7 +3,7 @@ const cors = require('cors')
 const SocialNetwork = require('./network')
 
 const app = express();
-const port = 3000;
+const PORT = 3000;
 
 // Middleware to parse JSON request bodies
 app.use(express.json())
@@ -52,6 +52,6 @@ app.get('/network', (req, res) => {
 });
 
 // Start the server
-app.listen(port, () => {
-  console.log(`Social network app listening at http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Social network app listening at http://localhost:${PORT}`);
 });
